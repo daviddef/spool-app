@@ -1,0 +1,24 @@
+:root{--ink:#1d1b2e;--mute:#5d5a73;--bg:#fbfaff;--card:#ffffff;--line:#e7e4f3;--indigo:#4b3fc4;--violet:#7a45d6;--coral:#ff5f7e;--orange:#ff9a4d;--teal:#1fa3c8}
+@media (prefers-color-scheme:dark){:root{--ink:#f2f0ff;--mute:#a9a5c4;--bg:#14121f;--card:#1e1b2f;--line:#2e2a47}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--indigo)}@media (prefers-color-scheme:dark){a{color:#a99cff}}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;align-items:center;padding:18px 0}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;margin-right:auto}
+nav .brand img{width:34px;height:34px;border-radius:8px}
+nav a.l{color:var(--mute);text-decoration:none;font-weight:600;font-size:15px}
+.hero{background:linear-gradient(135deg,var(--indigo),var(--violet) 55%,var(--coral));color:#fff;border-radius:28px;padding:44px 28px;margin:6px 0 34px;text-align:center}
+.hero h1{margin:0 0 10px;font-size:clamp(30px,6vw,46px);line-height:1.1}
+.hero p{margin:0 auto;max-width:560px;font-size:19px;opacity:.95}
+.pill{display:inline-block;margin-top:22px;background:#fff;color:var(--indigo);font-weight:700;padding:11px 22px;border-radius:999px;text-decoration:none}
+h2{font-size:26px;margin:38px 0 10px}h3{font-size:19px;margin:22px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card h3{margin-top:0}.card p{margin:0;color:var(--mute);font-size:16px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding:6px 2px 18px;scroll-snap-type:x mandatory}
+.shots img{height:440px;width:auto;border-radius:18px;border:1px solid var(--line);scroll-snap-align:start;flex:none}
+.note{color:var(--mute);font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:22px 0 40px;color:var(--mute);font-size:14px}
+footer a{color:var(--mute)}
+article h2{margin-top:30px}article ul{padding-left:22px}article li{margin:5px 0}
